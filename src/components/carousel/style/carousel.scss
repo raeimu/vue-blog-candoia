@@ -1,0 +1,27 @@
+@import '@style/base';
+.carousel{
+    border-radius: 6px;
+    &__right-button,&__left-button{
+        height: 2.5rem;
+        border-radius: 2px;
+
+        background-color: white;
+
+        opacity: 0;
+
+        transition: opacity 0.25s ease;
+
+        @extend %flex-vertical-center;
+
+        .icon-font{
+            font-size: 12px !important;
+        }
+
+        padding: 0 3px;
+    }
+    &:hover{
+        .carousel__right-button,.carousel__left-button{
+            opacity: 1;
+        }
+    }
+}

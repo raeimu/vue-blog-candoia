@@ -6,4 +6,4 @@ import {useLoading} from './src/useLoading'
 
 export {createLoading,useLoading}
 
-export const CLoading = withInstall(Loading)
+export const CLoading = withInstall<typeof Loading>(Loading)

@@ -5,7 +5,7 @@ $shadow: var(--card-shadow);
     @return #{math.div($px, $fontSize)}rem;
 }
 
-@mixin flex-mixin($flow: column nowrap, $justify: center, $alignItem: flex-start, $alignContent: flex-start) {
+@mixin flex-mixin($flow: row nowrap, $justify: center, $alignItem: flex-start, $alignContent: flex-start) {
     display: flex;
     flex-flow: $flow;
     justify-content: $justify;
@@ -17,4 +17,10 @@ $shadow: var(--card-shadow);
     border-radius: 6px;
     padding: 5px;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+
+%flex-vertical-center{
+    display: flex;
+    align-items: center;
 }
