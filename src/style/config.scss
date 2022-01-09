@@ -1,11 +1,14 @@
-:root{
-    --app-back:blue;
-    --cont-back:green;
-    
-    --art-title-color:violet;
-    --art-content-color:red;
-    --li-link-color:grey;
-    --li-link-ac-color:yellow;
-    --menu-link-color:grey;
-    --menu-link-ac-color:yellow;
+:root {
+    --app-back: rgb(131, 131, 131);
+    --cont-back: rgb(112, 182, 112);
+
+    --art-title-color: violet;
+    --art-content-color: red;
+    --li-link-color: grey;
+    --li-link-ac-color: yellow;
+    --menu-link-color: grey;
+    --menu-link-ac-color: yellow;
+    --loader-color: #EA4961;
+    --card-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
 }
+

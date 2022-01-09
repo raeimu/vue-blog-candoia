@@ -9,6 +9,7 @@ export enum GlobalColorDARK {
     LIST_LINK_ACTIVE_COLOR = '#222',
     MENU_LINK_COLOR = '#333',
     MENU_LINK_ACTIVE_COLOR = '#aaa',
+    LOADER_COLOR = '#bfaa33'
 }
 
 export enum GlobalColorLIGHT {
@@ -22,6 +23,7 @@ export enum GlobalColorLIGHT {
     LIST_LINK_ACTIVE_COLOR = '',
     MENU_LINK_COLOR = '',
     MENU_LINK_ACTIVE_COLOR = '',
+    LOADER_COLOR = '#bfdcae',
 }
 
 export const BACKEND_URL = "http://10.153.161.194" 

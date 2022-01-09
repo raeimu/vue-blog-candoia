@@ -1,4 +1,6 @@
+import { reactive } from "vue"
 import { ARTICLE_API_SERVER, ARTICLE_CONTENT_SERVER, ARTICLE_FILTER_BY_LABELS_SERVER, BACKEND_PORT, BACKEND_URL, CAROUSEL_IMG_SERVER } from "../pro-config"
+import { withFunctionalStore } from "../utils/core"
 
 /**
  * @description 文章对象
@@ -104,3 +106,12 @@ function appendAllParams(url: URL, ps: string[], name: string) {
 }
 
 
+/**
+ * 
+ * @returns 新的文章数组对象
+ */
+ function _useArticleList() {
+    return reactive(new ArticleList(getArticleList))
+}
+
+export const useArticleList =  withFunctionalStore(_useArticleList)

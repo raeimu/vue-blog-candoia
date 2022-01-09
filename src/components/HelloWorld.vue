@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import {CCarousel,CCarouselItem} from '.'
 
 defineProps<{ msg: string }>()
 
@@ -31,6 +32,14 @@ const count = ref(0)
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
+  <p><span class="icon-font">&#xe609;</span></p>
+    <CCarousel>
+    <CCarouselItem style="background-color: cadetblue;">item1</CCarouselItem>
+    <CCarouselItem style="background-color: coral;">item2</CCarouselItem>
+    <CCarouselItem style="background-color: crimson;">item3</CCarouselItem>
+    <CCarouselItem style="background-color: tomato;">item4</CCarouselItem>
+    <CCarouselItem style="background-color: green;">item5</CCarouselItem>
+  </CCarousel>
 </template>
 
 <style scoped>
