@@ -100,6 +100,7 @@ onMounted(() => {
 @import "@style/base";
 
 .carousel {
+    z-index: 1;
     position: relative;
     width: 400px;
     height: 300px;
@@ -128,16 +129,16 @@ onMounted(() => {
         position: absolute;
         bottom: 5px;
         @include flex-mixin();
-        gap: 1rem;
+        gap: 0.25rem;
         &__item {
-            width: 12px;
+            width: 16px;
             height: 5px;
             background-color: rgb(54, 54, 54);
 
-            transition: all 0.25s ease;
+            transition: all 0.5s ease;
         }
         &__item--active {
-            width: 7px;
+            width: 10px;
             background-color: white;
         }
     }

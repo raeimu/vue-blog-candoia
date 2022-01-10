@@ -120,14 +120,11 @@ export function useProvider<T>(func:FunctionalStore<T>){
 type InjectType = 'root' | 'optional'
 
 export function useInjector<T>(input:FunctionalStore<T>,type:InjectType){
-    let token,root,name:string
+    let token:symbol
     if(typeof input === 'symbol'){
         token = input
     } else {
-
         token = input.token
-        root = input.root
-        name = input.name
     }
 
     switch(type){

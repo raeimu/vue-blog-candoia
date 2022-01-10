@@ -21,6 +21,8 @@ export function useIconMap() {
         .set("she-zhi","&#xe8b7;")
         .set("zhu-ye","&#xe8a1")
         .set("wei-xin","&#xe607;")
-        .set("github","&#xe680")
+        .set("github","&#xe741;")
+        .set("ri-qi","&#xe650;")
+        .set("biao-qian","&#xe63d;")
     return map
 }
