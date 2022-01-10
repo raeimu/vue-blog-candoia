@@ -1,5 +1,7 @@
+@import 'base';
+
 :root {
-    --app-back: rgb(131, 131, 131);
+    --app-back: rgb(255, 255, 255);
     --cont-back: rgb(112, 182, 112);
 
     --art-title-color: violet;
@@ -10,6 +12,8 @@
     --menu-link-ac-color: yellow;
     --loader-color: #EA4961;
     --card-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+
+    --font-size:16px;
 }
 
 

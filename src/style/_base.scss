@@ -1,7 +1,10 @@
 @use "sass:math";
+$fontSize:16px;
+$primary-color:#EA4961;
+
 $shadow: var(--card-shadow);
 
-@function px-to-rem() {
+@function px-to-rem($px) {
     @return #{math.div($px, $fontSize)}rem;
 }
 

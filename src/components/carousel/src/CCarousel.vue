@@ -18,7 +18,7 @@ function rightStir() {
     registry.changeActiveTagHelper()
 }
 
-function leftButtonClick(){
+function leftButtonClick() {
     clearTimer()
     leftStir()
     autoPlay()
@@ -30,11 +30,13 @@ function rightButtonClick() {
     autoPlay()
 }
 function scrollTo(index: number) {
+    clearTimer()
     const offset = registry.computedNeedScroll(index)
     if (offset) {
         scroll(offset)
         registry.changeActiveTagHelper()
     }
+    autoPlay()
 }
 
 function scroll(offset: number) {
@@ -52,16 +54,16 @@ function scroll(offset: number) {
     }
 }
 
-let autoPlayTimer : NodeJS.Timer | undefined = undefined
+let autoPlayTimer: NodeJS.Timer | undefined = undefined
 
 function autoPlay() {
-    autoPlayTimer = setInterval(()=>{
+    autoPlayTimer = setInterval(() => {
         rightStir()
-    },3000)
+    }, 3000)
 }
 
-function clearTimer(){
-    if(autoPlayTimer){
+function clearTimer() {
+    if (autoPlayTimer) {
         clearInterval(autoPlayTimer)
     }
 }
@@ -134,7 +136,7 @@ onMounted(() => {
 
             transition: all 0.25s ease;
         }
-        &__item--active{
+        &__item--active {
             width: 7px;
             background-color: white;
         }
@@ -142,6 +144,3 @@ onMounted(() => {
 }
 </style>
 
-<script lang="ts">
-
-</script>

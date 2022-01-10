@@ -33,6 +33,7 @@ const count = ref(0)
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
   <p><span class="icon-font">&#xe609;</span></p>
+  <button class="button button--rounded button--primary button--border button--glow">hello</button>
     <CCarousel>
     <CCarouselItem style="background-color: cadetblue;">item1</CCarouselItem>
     <CCarouselItem style="background-color: coral;">item2</CCarouselItem>
