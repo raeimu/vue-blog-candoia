@@ -13,7 +13,7 @@ const props = defineProps<{flag:boolean}>()
 
 <style lang="scss">
 @import "@style/base";
-$off-color: $primary-color;
+$off-color: #ff4545;
 $on-color: #48ea8b;
 .switch {
     display: inline-block;

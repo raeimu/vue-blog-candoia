@@ -1,8 +1,5 @@
 @use "sass:math";
 $fontSize:16px;
-$primary-color:#EA4961;
-
-$shadow: var(--card-shadow);
 
 @function px-to-rem($px) {
     @return #{math.div($px, $fontSize)}rem;
@@ -19,11 +16,24 @@ $shadow: var(--card-shadow);
 @mixin card-style {
     border-radius: 6px;
     padding: 5px;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+@mixin mimicry($vague:12px) {
+    border-left: var(--border-color) 1px solid;
+    border-top:var(--border-color) 1px solid;
+    background-color: var(--app-background-color);
+    box-shadow: 5px 5px $vague var(--app-background-darken10-color),
+    -5px -5px $vague var(--app-background-color),
 }
 
 
 %flex-vertical-center{
     display: flex;
     align-items: center;
+}
+%use-icon-font{
+    font-family: "icon-font" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

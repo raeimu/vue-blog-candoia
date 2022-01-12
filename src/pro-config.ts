@@ -1,29 +1,23 @@
-export enum GlobalColorDARK {
-    APP_BACKGROUND = '#206a5d',
-    CONTAINER_BACKGROUND = '#81b214',
+import Color from "color"
 
+export  class GlobalColorDARK {
+    //app 背景颜色
+    static APP_BACKGROUND_COLOR = Color('#fff')
+    //primary color
+    static PRIMARY_COLOR = Color('#EA4961')
 
-    ARTICLE_TITLE_COLOR = '#bfdcae',
-    ARTICLE_CONTENT_COLOR = '#efefef',
-    LIST_LINK_COLOR = '#fff',
-    LIST_LINK_ACTIVE_COLOR = '#222',
-    MENU_LINK_COLOR = '#333',
-    MENU_LINK_ACTIVE_COLOR = '#aaa',
-    LOADER_COLOR = '#bfaa33'
+    //字体颜色
+    static PRIMARY_TEXT_COLOR = Color("#303133")
 }
 
-export enum GlobalColorLIGHT {
-    APP_BACKGROUND = '',
-    CONTAINER_BACKGROUND = '',
+export class GlobalColorLIGHT {
+    //app 背景颜色
+    static APP_BACKGROUND_COLOR = Color('#303030')
+    //primary color
+    static PRIMARY_COLOR = Color('#EA4961')
 
-
-    ARTICLE_TITLE_COLOR = '',
-    ARTICLE_CONTENT_COLOR = '',
-    LIST_LINK_COLOR = '',
-    LIST_LINK_ACTIVE_COLOR = '',
-    MENU_LINK_COLOR = '',
-    MENU_LINK_ACTIVE_COLOR = '',
-    LOADER_COLOR = '#bfdcae',
+    //字体颜色
+    static PRIMARY_TEXT_COLOR = Color("#c0c1c2")
 }
 
 export const BACKEND_URL = "http://10.153.161.194" 

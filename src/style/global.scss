@@ -31,16 +31,18 @@ body {
     url("../assets/font/iconfont.ttf?t=1641202481968") format("truetype");
 }
 
-$primary: $primary-color;
-$color: #fff;
+
 
 .icon-font {
   font-family: "icon-font" !important;
   font-size: 1.25rem;
+  color: var(--primary-color);
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0 0.2rem;
+  text-shadow: 3px 3px 5px var(--primary-alpha20-color) ,
+    3px 3px 5px var(--primary-darken10-alpha20-color)
 }
 .skeleton {
 	background-color: #e2e5e7;
@@ -91,34 +93,30 @@ $color: #fff;
     border-radius: 6px;
   }
   &--primary {
-    background-color: $primary;
-    border-color: $primary;
-    color: $color;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
     &:hover {
-      background-color: lighten($color: $primary, $amount: 5%);
+      background-color: var(--primary--lighten5-color)
     }
     &:active {
-      $temp: lighten(
-        $color: $primary,
-        $amount: 3%,
-      );
-      background-color: adjust-hue($color: $temp, $degrees: 2deg);
-      border-color: darken($color: $primary, $amount: 1%);
-      color: darken($color: $primary, $amount: 10%);
+      background-color: var(--primary--lighten3-color);
+      border-color: var(--primary--darken3-color);
+      color: var(--primary--darken10-color);
     }
     &.button--glow {
       animation-name: glowing-primary;
     }
     &.button--border {
-      color: $primary;
+      color: var(--primary-color);
       &:hover,
       &:focus,
       &:active {
-        background-color: rgba($color: $primary, $alpha: 0.8);
-        color: $color;
+        background-color:var(--primary-alpha80-color);
+        color: #fff;
       }
       &:active {
-        background-color: rgba($color: $primary, $alpha: 0.2) !important;
+        background-color: var(--primary-alpha20-color) !important;
       }
     }
   }
@@ -135,23 +133,23 @@ $color: #fff;
     border-width: 2px;
     border-style: solid;
     &:hover {
-      color: $color;
+      color: #fff;
     }
   }
 }
 
 @keyframes glowing-primary {
   from {
-    -webkit-box-shadow: 0 0 0 rgba($primary, 0.3);
-    box-shadow: 0 0 0 rgba($primary, 0.3);
+    -webkit-box-shadow: 0 0 0 var(--primary-alpha20-color);
+    box-shadow: 0 0 0 var(--primary-alpha20-color);
   }
   50% {
-    -webkit-box-shadow: 0 0 20px rgba($primary, 0.8);
-    box-shadow: 0 0 20px rgba($primary, 0.8);
+    -webkit-box-shadow: 0 0 20px var(--primary-alpha80-color);
+    box-shadow: 0 0 20px var(--primary-alpha80-color);
   }
   to {
-    -webkit-box-shadow: 0 0 0 rgba($primary, 0.3);
-    box-shadow: 0 0 0 rgba($primary, 0.3);
+    -webkit-box-shadow: 0 0 0 var(--primary-alpha20-color);
+    box-shadow: 0 0 0 var(--primary-alpha20-color);
   }
 }
 
@@ -159,4 +157,17 @@ $color: #fff;
   display: flex;
   flex-flow: row wrap;
   gap:0.5rem
+}
+
+.primary-text{
+  color: var(--primary-text-color);
+}
+.regular-text{
+  color: var(--regular-text-color);
+}
+.secondary-text{
+  color: var(--secondary-text-color);
+}
+.placeholder-text{
+  color: var(--placeholder-text);
 }

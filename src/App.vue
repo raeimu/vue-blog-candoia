@@ -6,19 +6,16 @@ import { useDark } from './utils/core';
 </script>
 
 <template>
-  <img @click="useDark()" alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
 
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background-color: var(--app-back);
-  box-shadow: var(--card-shadow);
-  color: #2c3e50;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: var(--app-background-color);
+  color: var(--primary-text-color);
 }
 </style>

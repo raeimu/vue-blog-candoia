@@ -42,39 +42,42 @@ watch(live, (v) => {
 <style lang="scss">
 @import "@style/base";
 .scrap {
-	padding: 0.4rem 0.4rem;
+	padding: 0.2rem 0.2rem;
 	padding-right: 2rem;
 	cursor: pointer;
 	display: inline-flex;
 	position: relative;
 	align-items: center;
-	background: $primary-color;
 	border: none;
-	border-radius: 5px;
-	color: white;
-	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+	border-radius: 6px;
+	color:  var(--primary-color);
+
+	@include mimicry;
 	&:hover {
-		background-color: lighten($color: $primary-color, $amount: 5%);
+		background-color: var(--primary-lighten5-color);
 		.scrap__text {
 			opacity: 0;
 		}
 		.scrap__icon {
+			&__cha{
+				color: #fff !important;
+			}
 			right: 50%;
 			transform: translateX(50%);
 		}
 	}
 	& * {
-		transition: all 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+		transition: right 200ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	}
 	&__text {
-		// transform: translateX(35px);
-		color: white;
-		font-weight: bold;
+		transition: opacity 200ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+		color: var(--primary-color);
+		font-weight: normal;
 	}
 	&__icon {
-		// fill: white;
 		&__cha {
 			font-size: 12px !important;
+			transform: scale(0.8);
 		}
 		position: absolute;
 		right: 0.5rem;
@@ -82,30 +85,5 @@ watch(live, (v) => {
 		align-items: center;
 		justify-content: center;
 	}
-}
-
-button,
-button span {
-	transition: 200ms;
-}
-
-button .text {
-	transform: translateX(35px);
-	color: white;
-	font-weight: bold;
-}
-
-button:hover .icon {
-	width: 150px;
-	border-left: none;
-	transform: translateX(0);
-}
-
-button:focus {
-	outline: none;
-}
-
-button:active .icon svg {
-	transform: scale(0.8);
 }
 </style>

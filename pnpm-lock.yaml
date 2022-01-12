@@ -1,8 +1,10 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/color': ^3.0.2
   '@types/node': ^17.0.8
   '@vitejs/plugin-vue': ^2.0.0
+  color: ^4.2.0
   sass: ^1.44.0
   typescript: ^4.4.4
   vite: ^2.7.2
@@ -11,10 +13,12 @@ specifiers:
   vue-tsc: ^0.29.8
 
 dependencies:
+  color: registry.npmmirror.com/color/4.2.0
   vue: registry.npmmirror.com/vue/3.2.26
   vue-router: registry.npmmirror.com/vue-router/4.0.12_vue@3.2.26
 
 devDependencies:
+  '@types/color': registry.npmmirror.com/@types/color/3.0.2
   '@types/node': registry.npmmirror.com/@types/node/17.0.8
   '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/2.0.1_vite@2.7.10+vue@3.2.26
   sass: registry.npmmirror.com/sass/1.46.0
@@ -101,6 +105,12 @@ packages:
       function-bind: registry.nlark.com/function-bind/1.1.1
       get-intrinsic: registry.nlark.com/get-intrinsic/1.1.1
     dev: true
+
+  registry.nlark.com/color-name/1.1.4:
+    resolution: {integrity: sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/color-name/download/color-name-1.1.4.tgz}
+    name: color-name
+    version: 1.1.4
+    dev: false
 
   registry.nlark.com/constantinople/4.0.1:
     resolution: {integrity: sha1-De8RP6Dk3I3oMzGlz3nIsyUhMVE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/constantinople/download/constantinople-4.0.1.tgz}
@@ -199,6 +209,12 @@ packages:
     dependencies:
       function-bind: registry.nlark.com/function-bind/1.1.1
     dev: true
+
+  registry.nlark.com/is-arrayish/0.3.2:
+    resolution: {integrity: sha1-RXSirlb3qyBolvtDHq7tBm/fjwM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-arrayish/download/is-arrayish-0.3.2.tgz}
+    name: is-arrayish
+    version: 0.3.2
+    dev: false
 
   registry.nlark.com/is-binary-path/2.1.0:
     resolution: {integrity: sha1-6h9/O4DwZCNug0cPhsCcJU+0Wwk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-binary-path/download/is-binary-path-2.1.0.tgz}
@@ -529,6 +545,28 @@ packages:
       to-fast-properties: registry.nlark.com/to-fast-properties/2.0.0
     dev: true
 
+  registry.npmmirror.com/@types/color-convert/2.0.0:
+    resolution: {integrity: sha1-j17muehj3L7lcD9aUX/7E9PqTiI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/color-convert/download/@types/color-convert-2.0.0.tgz}
+    name: '@types/color-convert'
+    version: 2.0.0
+    dependencies:
+      '@types/color-name': registry.npmmirror.com/@types/color-name/1.1.1
+    dev: true
+
+  registry.npmmirror.com/@types/color-name/1.1.1:
+    resolution: {integrity: sha1-HBJhu+qhCoBVu8XYq4S3sq/IRqA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/color-name/download/@types/color-name-1.1.1.tgz}
+    name: '@types/color-name'
+    version: 1.1.1
+    dev: true
+
+  registry.npmmirror.com/@types/color/3.0.2:
+    resolution: {integrity: sha1-N3kEPngvViqpFXtfxr0H4U/Y5/M=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/color/download/@types/color-3.0.2.tgz}
+    name: '@types/color'
+    version: 3.0.2
+    dependencies:
+      '@types/color-convert': registry.npmmirror.com/@types/color-convert/2.0.0
+    dev: true
+
   registry.npmmirror.com/@types/node/17.0.8:
     resolution: {integrity: sha512-YofkM6fGv4gDJq78g4j0mMuGMkZVxZDgtU0JRdx6FgiJDG+0fY0GKVolOV8WqVmEhLCXkQRjwDdKyPxJp/uucg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/download/@types/node-17.0.8.tgz}
     name: '@types/node'
@@ -761,6 +799,33 @@ packages:
     optionalDependencies:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
+
+  registry.npmmirror.com/color-convert/2.0.1:
+    resolution: {integrity: sha1-ctOmjVmMm9s68q0ehPIdiWq9TeM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/color-convert/download/color-convert-2.0.1.tgz}
+    name: color-convert
+    version: 2.0.1
+    engines: {node: '>=7.0.0'}
+    dependencies:
+      color-name: registry.nlark.com/color-name/1.1.4
+    dev: false
+
+  registry.npmmirror.com/color-string/1.9.0:
+    resolution: {integrity: sha512-9Mrz2AQLefkH1UvASKj6v6hj/7eWgjnT/cVsR8CumieLoT+g900exWeNogqtweI8dxloXN9BDQTYro1oWu/5CQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/color-string/download/color-string-1.9.0.tgz}
+    name: color-string
+    version: 1.9.0
+    dependencies:
+      color-name: registry.nlark.com/color-name/1.1.4
+      simple-swizzle: registry.npmmirror.com/simple-swizzle/0.2.2
+    dev: false
+
+  registry.npmmirror.com/color/4.2.0:
+    resolution: {integrity: sha512-hHTcrbvEnGjC7WBMk6ibQWFVDgEFTVmjrz2Q5HlU6ltwxv0JJN2Z8I7uRbWeQLF04dikxs8zgyZkazRJvSMtyQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/color/download/color-4.2.0.tgz}
+    name: color
+    version: 4.2.0
+    dependencies:
+      color-convert: registry.npmmirror.com/color-convert/2.0.1
+      color-string: registry.npmmirror.com/color-string/1.9.0
+    dev: false
 
   registry.npmmirror.com/csstype/2.6.19:
     resolution: {integrity: sha512-ZVxXaNy28/k3kJg0Fou5MiYpp88j7H9hLZp8PDC3jV0WFjfH5E9xHb56L0W59cPbKbcHXeP4qyT8PrHp8t6LcQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/csstype/download/csstype-2.6.19.tgz?cache=0&sync_timestamp=1637225163498&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fcsstype%2Fdownload%2Fcsstype-2.6.19.tgz}
@@ -1134,6 +1199,14 @@ packages:
       immutable: registry.npmmirror.com/immutable/4.0.0
       source-map-js: registry.npmmirror.com/source-map-js/1.0.1
     dev: true
+
+  registry.npmmirror.com/simple-swizzle/0.2.2:
+    resolution: {integrity: sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/simple-swizzle/download/simple-swizzle-0.2.2.tgz}
+    name: simple-swizzle
+    version: 0.2.2
+    dependencies:
+      is-arrayish: registry.nlark.com/is-arrayish/0.3.2
+    dev: false
 
   registry.npmmirror.com/source-map-js/1.0.1:
     resolution: {integrity: sha512-4+TN2b3tqOCd/kaGRJ/sTYA0tR0mdXx26ipdolxcwtJVqEnqNYvlCAt1q3ypy4QMlYus+Zh34RNtYLoq2oQ4IA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/source-map-js/download/source-map-js-1.0.1.tgz}

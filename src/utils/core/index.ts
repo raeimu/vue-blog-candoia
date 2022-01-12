@@ -7,15 +7,26 @@ import { GlobalColorDARK, GlobalColorLIGHT } from './../../pro-config'
 
 export function useDark() {
     const declaration = document.body.style;
-    declaration.setProperty('--app-back', GlobalColorDARK.APP_BACKGROUND)
-    declaration.setProperty('--cont-back', GlobalColorDARK.CONTAINER_BACKGROUND)
-    declaration.setProperty('--art-title-color', GlobalColorDARK.ARTICLE_TITLE_COLOR)
-    declaration.setProperty('--art-content-color', GlobalColorDARK.ARTICLE_CONTENT_COLOR)
-    declaration.setProperty('--li-link-color', GlobalColorDARK.LIST_LINK_COLOR)
-    declaration.setProperty('--li-link-ac-color', GlobalColorDARK.LIST_LINK_ACTIVE_COLOR)
-    declaration.setProperty('--menu-link-color', GlobalColorDARK.MENU_LINK_COLOR)
-    declaration.setProperty('--menu-link-ac-color', GlobalColorDARK.MENU_LINK_ACTIVE_COLOR)
-    declaration.setProperty('--loader-color', GlobalColorDARK.LOADER_COLOR)
+    declaration.setProperty('--app-background-color',GlobalColorDARK.APP_BACKGROUND_COLOR.toString())
+    declaration.setProperty('--app-background-darken10-color',GlobalColorDARK.APP_BACKGROUND_COLOR.darken(0.1).toString())
+    declaration.setProperty('--border-color',GlobalColorDARK.APP_BACKGROUND_COLOR.darken(0.03).toString())
+    declaration.setProperty('--primary-color',GlobalColorDARK.PRIMARY_COLOR.toString())
+    declaration.setProperty('--primary-alpha20-color',GlobalColorDARK.PRIMARY_COLOR.alpha(0.2).toString())
+    declaration.setProperty('--primary-alpha80-color',GlobalColorDARK.PRIMARY_COLOR.alpha(0.8).toString())
+    declaration.setProperty('--primary--lighten5-color',GlobalColorDARK.PRIMARY_COLOR.lighten(0.05).toString())
+    declaration.setProperty('--primary--lighten3-color',GlobalColorDARK.PRIMARY_COLOR.lighten(0.03).toString())
+    declaration.setProperty('--primary--lighten10-color',GlobalColorDARK.PRIMARY_COLOR.lighten(0.1).toString())
+
+    declaration.setProperty('--primary--darken10-color',GlobalColorDARK.PRIMARY_COLOR.darken(0.1).toString())
+    declaration.setProperty('--primary--darken3-color',GlobalColorDARK.PRIMARY_COLOR.darken(0.03).toString())
+
+    declaration.setProperty('--primary--darken10-alpha20-color',GlobalColorDARK.PRIMARY_COLOR.darken(0.1).alpha(0.2).toString())
+    declaration.setProperty('--primary-text-color',GlobalColorDARK.PRIMARY_TEXT_COLOR.toString())
+    declaration.setProperty('--regular-text-color',GlobalColorDARK.PRIMARY_TEXT_COLOR.fade(0.2).toString())
+    declaration.setProperty('--secondary-text-color',GlobalColorDARK.PRIMARY_TEXT_COLOR.fade(0.4).toString())
+    declaration.setProperty('--placeholder-text-color',GlobalColorDARK.PRIMARY_TEXT_COLOR.fade(0.6).toString())
+
+
 }
 
 /**
@@ -24,15 +35,25 @@ export function useDark() {
 
 export function useLight() {
     const declaration = document.body.style;
-    declaration.setProperty('--app-back', GlobalColorLIGHT.APP_BACKGROUND)
-    declaration.setProperty('--cont-back', GlobalColorLIGHT.CONTAINER_BACKGROUND)
-    declaration.setProperty('--art-title-color', GlobalColorLIGHT.ARTICLE_TITLE_COLOR)
-    declaration.setProperty('--art-content-color', GlobalColorLIGHT.ARTICLE_CONTENT_COLOR)
-    declaration.setProperty('--li-link-color', GlobalColorLIGHT.LIST_LINK_COLOR)
-    declaration.setProperty('--li-link-ac-color', GlobalColorLIGHT.LIST_LINK_ACTIVE_COLOR)
-    declaration.setProperty('--menu-link-color', GlobalColorLIGHT.MENU_LINK_COLOR)
-    declaration.setProperty('--menu-link-ac-color', GlobalColorLIGHT.MENU_LINK_ACTIVE_COLOR)
-    declaration.setProperty('--loader-color', GlobalColorLIGHT.LOADER_COLOR)
+    declaration.setProperty('--app-background-color',GlobalColorLIGHT.APP_BACKGROUND_COLOR.toString())
+    declaration.setProperty('--app-background-darken10-color',GlobalColorLIGHT.APP_BACKGROUND_COLOR.darken(0.1).toString())
+    declaration.setProperty('--border-color',GlobalColorLIGHT.APP_BACKGROUND_COLOR.darken(0.03).toString())
+    declaration.setProperty('--primary-color',GlobalColorLIGHT.PRIMARY_COLOR.toString())
+    declaration.setProperty('--primary-alpha20-color',GlobalColorLIGHT.PRIMARY_COLOR.alpha(0.2).toString())
+    declaration.setProperty('--primary-alpha80-color',GlobalColorLIGHT.PRIMARY_COLOR.alpha(0.8).toString())
+    declaration.setProperty('--primary-lighten5-color',GlobalColorLIGHT.PRIMARY_COLOR.lighten(0.05).toString())
+    declaration.setProperty('--primary-lighten3-color',GlobalColorLIGHT.PRIMARY_COLOR.lighten(0.03).toString())
+    declaration.setProperty('--primary-lighten10-color',GlobalColorLIGHT.PRIMARY_COLOR.lighten(0.1).toString())
+
+    declaration.setProperty('--primary-darken10-color',GlobalColorLIGHT.PRIMARY_COLOR.darken(0.1).toString())
+    declaration.setProperty('--primary-darken3-color',GlobalColorLIGHT.PRIMARY_COLOR.darken(0.03).toString())
+
+    declaration.setProperty('--primary-darken10-alpha20-color',GlobalColorLIGHT.PRIMARY_COLOR.darken(0.1).alpha(0.2).toString())
+    declaration.setProperty('--primary-text-color',GlobalColorLIGHT.PRIMARY_TEXT_COLOR.toString())
+    declaration.setProperty('--regular-text-color',GlobalColorLIGHT.PRIMARY_TEXT_COLOR.fade(0.2).toString())
+    declaration.setProperty('--secondary-text-color',GlobalColorLIGHT.PRIMARY_TEXT_COLOR.fade(0.4).toString())
+    declaration.setProperty('--placeholder-text-color',GlobalColorLIGHT.PRIMARY_TEXT_COLOR.fade(0.6).toString())
+
 }
 
 /**

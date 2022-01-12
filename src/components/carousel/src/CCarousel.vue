@@ -76,7 +76,6 @@ onMounted(() => {
 
 <template>
     <div class="carousel">
-        <span></span>
         <div class="carousel__container">
             <slot></slot>
         </div>
@@ -102,7 +101,7 @@ onMounted(() => {
 .carousel {
     z-index: 1;
     position: relative;
-    width: 400px;
+    width: 500px;
     height: 300px;
     @extend %flex-vertical-center;
 

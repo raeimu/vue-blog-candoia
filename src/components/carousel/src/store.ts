@@ -47,7 +47,7 @@ class SubItemRegistry {
 
     private setStyle() {
         for (const index in this.styles) {
-            this.styles[index].left = this.windowIndex - parseInt(index) + '00%'
+            this.styles[index].left = parseInt(index) - this.windowIndex  + '00%'
             this.styles[index].zIndex = -1
         }
         this.styles[this.windowIndex].zIndex = 0

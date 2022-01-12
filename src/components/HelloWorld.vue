@@ -7,6 +7,7 @@ import CScrap from './base/CScrap.vue';
 import CSwitch from './base/CSwitch.vue';
 import CBusinessCard from '@/views/businessCard/src/CBusinessCard.vue';
 import CTitleCard from '@/views/titileCard/CTitleCard.vue';
+import CCheckboxTags from './base/CCheckboxTags.vue';
 
 defineProps<{ msg: string }>()
 const scrap = useProvider(useArrDataStore)
@@ -14,7 +15,7 @@ const switchFlag = ref(true)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <!-- <h1>{{ msg }}</h1> -->
   <p>
     <span class="icon-font">&#xe609;</span>
   </p>
@@ -23,15 +24,12 @@ const switchFlag = ref(true)
   </p>
   <p>
     {{ scrap.store }}
-    <CScrap value="java">java</CScrap>
-    <CScrap value="python">python</CScrap>
   </p>
   <p>
     {{ switchFlag }}
     <CSwitch @click="switchFlag = !switchFlag" :flag="switchFlag"></CSwitch>
   </p>
   <p>
-    <CBusinessCard></CBusinessCard>
     <CTitleCard title="标签" icon="biao-qian" align="center">
       <div class="col-enum">
         <CScrap value="c++">c++</CScrap>
@@ -40,6 +38,12 @@ const switchFlag = ref(true)
         <CScrap value="other">other</CScrap>
       </div>
     </CTitleCard>
+  </p>
+  <p>
+        <CBusinessCard></CBusinessCard>
+  </p>
+  <p>
+    <CCheckboxTags name="demo" value="box">java</CCheckboxTags>
   </p>
   <CCarousel>
     <CCarouselItem class="skeleton">item1</CCarouselItem>

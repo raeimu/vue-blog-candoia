@@ -5,8 +5,7 @@
     align-items: center;
     gap: 1rem;
     width: px-to-rem(300px);
-    background-color: var(--cont-back);
-    color: var(--app-base-color);
+    @include mimicry();
     @include card-style;
     padding-top: 3rem;
     &__user-avatar{
@@ -22,5 +21,8 @@
         .icon-font{
             padding: 0 1rem;
         }
+    }
+    &__user-sign{
+        color: var(--regular-text--color);
     }
 }

@@ -29,11 +29,11 @@ const titleStyle = computed(()=>{
 @import '@style/base';
     .title-card{
         @include card-style;
+        @include mimicry();
         padding-left: 1rem;
         padding-right: 1rem;
         padding-bottom: 1rem;
         width: px-to-rem(300px);
-        background-color: var(--cont-back);
         display: inline-block;
         &__title{
             padding: 0.5rem;

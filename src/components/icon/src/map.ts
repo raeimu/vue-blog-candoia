@@ -20,9 +20,16 @@ export function useIconMap() {
         .set("dian-zan","&#xe8ad;")
         .set("she-zhi","&#xe8b7;")
         .set("zhu-ye","&#xe8a1")
-        .set("wei-xin","&#xe607;")
+        .set("wei-xin","&#xe620;")
+        .set("wei-xin-2","&#xe607;")
         .set("github","&#xe741;")
         .set("ri-qi","&#xe650;")
         .set("biao-qian","&#xe63d;")
+        .set("dui-gou","&#xe65b;")
+        .set("cha-2","&#xe630;")
+        .set("jia","&#xe65c;")
+        .set("tong-lei","&#xe848;")
+        .set("shang-chuan","&#xec1d;")
+        .set("cai-dan","&#xe60e;")
     return map
 }
